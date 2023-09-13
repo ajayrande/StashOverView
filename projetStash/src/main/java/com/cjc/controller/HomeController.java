@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import org.springframework.web.bind.annotation.PostMapping;
@@ -59,6 +60,11 @@ public ResponseEntity<User> updateuser(@RequestBody User us){
 	return new ResponseEntity<User>(user, HttpStatus.OK);
 	
 }
-	
+@DeleteMapping("/delete/{id}")
+public ResponseEntity<String> Deletedata(@PathVariable ("id")int id){
+  hs.Deletedata(id);
 
+  return new ResponseEntity<String>("delete user",HttpStatus.OK);
+
+}
 }

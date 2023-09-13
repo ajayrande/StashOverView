@@ -9,4 +9,6 @@ public interface HomeRepository extends JpaRepository<User, Integer> {
 
 	User findByUid(int id);
 
+	User deleteById(String string);
+
 }

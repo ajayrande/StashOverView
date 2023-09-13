@@ -35,4 +35,14 @@ public class HomeServiceImpl implements HomeService{
 
 	}
 
+	@Override
+	public void Deletedata(int id) {
+		hr.deleteById(id);
+		
+	}
+
+
+
+	
+
 }

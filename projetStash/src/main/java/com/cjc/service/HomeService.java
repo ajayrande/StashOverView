@@ -21,5 +21,12 @@ public User saveUser(User u);
 
 public User getsingleuser(int id);
 
+
+
+
+
+public void Deletedata(int id);
+
+
 	
 }
