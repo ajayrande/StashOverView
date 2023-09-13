@@ -23,9 +23,16 @@ public class HomeServiceImpl implements HomeService{
 	}
 
 	@Override
+
 	public User saveUser(User u) {
 		
 		return hr.save(u);
+	}
+
+	public User getsingleuser(int id) {
+		
+		return hr.findByUid(id);
+
 	}
 
 }

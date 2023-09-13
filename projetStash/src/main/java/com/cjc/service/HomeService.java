@@ -16,6 +16,10 @@ public interface HomeService {
 
 public List<User> getAlluser();
 
+
 public User saveUser(User u);
+
+public User getsingleuser(int id);
+
 	
 }

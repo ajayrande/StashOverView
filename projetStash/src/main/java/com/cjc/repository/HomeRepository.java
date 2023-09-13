@@ -7,4 +7,6 @@ import com.cjc.model.User;
 @Repository
 public interface HomeRepository extends JpaRepository<User, Integer> {
 
+	User findByUid(int id);
+
 }
