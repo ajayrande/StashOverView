@@ -22,4 +22,10 @@ public class HomeServiceImpl implements HomeService{
 		return hr.findAll();
 	}
 
+	@Override
+	public User saveUser(User u) {
+		
+		return hr.save(u);
+	}
+
 }
